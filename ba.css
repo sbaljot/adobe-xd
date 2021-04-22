@@ -21,7 +21,7 @@ body{
     opacity: 1;    
 }
 #menu{
-    margin-left: 43px;
+    margin-left: 55px;
     margin-top: 15px;
     display: inline-block;
     position: relative;
@@ -62,7 +62,7 @@ body{
 #createref{
     display: inline-block;
     color: white;
-    margin-left: 1075px;
+    margin-left: 998px;
     margin-top: 33px;
     background: #514F48 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 20px #00000047;
@@ -92,9 +92,9 @@ body{
     background: #F2F2F2 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #0000003D;
     opacity: 1;
-    width: 1277px;
+    width: 1062px;
     height: 210px;
-    margin-left: 97px;
+    margin-left: 233px;
     margin-top: 29px;
     border-radius: 26px;
 }
@@ -103,11 +103,11 @@ body{
     bottom: 182px;
 }
 .tips p {
-    margin-left: 139px;
+    margin-left: 325px;
     width: 677px;
     display: inline-block;
     position: relative;
-    bottom: 243px;
+    bottom: 344px;
     font-weight: bold;
 }
 #tipheading{
@@ -118,7 +118,7 @@ body{
 }
 .tab {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 225px;
     margin-top: 50px;
 }
 .tab p {
@@ -137,31 +137,78 @@ body{
     display: none;
 }
 #tabhr{
-    width: 1280px;
+    width: 1073px;
     margin-top: -25px;
-    margin-left: 100px;
+    margin-left: 225px;
 }
 .overviewdivs{
-    width: 386px;
+    width: 330px;
     height: 219px;
     display: inline-block;
     margin-top: 45px;
+    margin-left: 10px;
+    box-shadow: 0px 3px 6px #0000002B;
+    border-radius: 23px;
+    opacity: 1;    
+    color: white;
 }
 #refrev{
     background: #8DD8A8 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #0000002B;
-    border-radius: 23px;
-    opacity: 1;    
+    margin-left: 200px;
 }
 #rev{
     background: #F6BCCA 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #0000002B;
-    border-radius: 23px;
-    opacity: 1;
 }
 #conversionrate{
     background: #AEB0E9 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #0000002B;
-    border-radius: 23px;
-    opacity: 1;    
+}
+.viewbtn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 18px;
+    opacity: 1;
+    width: 100px;
+    height: 31px;
+    color: black;
+    margin-left: 213px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.viewtxt{
+    position: relative;
+    left: 18px;
+    top: 4px;
+}
+.rightcaret{
+    position: relative;
+    left: 18px;
+    top: 6px;
+}
+#rrtitle, #rtitle, #crtitle{
+    font-size: 30px;
+    position: relative;
+    left: 38px;
+    top: 15px;
+}
+#rrdesc, #rdesc{
+    font-size: 20px;
+    position: relative;
+    left: 38px;
+    top: 15px;
+}
+#rrimg, #rimg, #crimg{
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+#arrowlink{
+    display: inline-block;
+    color: #3181F8;
+    font-weight: 550;
+}
+#arrowimg{
+    position: relative;
+    left: 1277px;
+    bottom: 116px;
 }
