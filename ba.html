@@ -116,18 +116,38 @@
         </p>
     </div>
     <div class="tab">
-        <p class="tablinks active" style="border-right: grey solid 1px; padding-left: 13px;" onclick="openTab(event, 'overview')">Overview</p>
+        <p class="tablinks active" style="border-right: grey solid 1px; padding-left: 13px;"
+            onclick="openTab(event, 'overview')">Overview</p>
         <p class="tablinks" style="padding-left: 13px;" onclick="openTab(event, 'analytics')">Analytics</p>
-    </div><hr id="tabhr">
+    </div>
+    <hr id="tabhr">
     <div id="overview" class="tabcontent" style="display: block;">
-        <div id="refrev" class="overviewdivs"></div>
-        <div id="rev" class="overviewdivs"></div>
-        <div id="conversionrate" class="overviewdivs"></div>
+        <div id="refrev" class="overviewdivs">
+            <span id="rrtitle">Referral Revenue</span><br><span id="rrdesc">in Last 7 Days</span>
+            <img id="rrimg" src="images/e9e0d1e2-5215-487c-ab27-56dfd83b1a52.png" alt="linegraph">
+            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
+            </div>
+        </div>
+        <div id="rev" class="overviewdivs">
+            <span id="rtitle">Revenue</span><br><span id="rdesc">on each $ spent</span>
+            <img id="rimg" src="images/99cab2e6-3da9-42ab-b8d5-85a9f88b3f1b.png" alt="bargraph">
+            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
+            </div>
+        </div>
+        <div id="conversionrate" class="overviewdivs">
+            <span id="crtitle">Conversion Rate</span>
+            <img id="crimg" style="height: 77px; width: 250px; margin-left: 20px;" src="images/9a676dae-5d07-407f-90ce-01d440fbf6ef.png" alt="graph">
+            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
+            </div>
+        </div>
+        <div id="arrowlink">View analytics</div>
+        
     </div>
     <div id="analytics" class="tabcontent">
         <p>Analytics content</p>
     </div>
-
+    <div id="arrowbg"></div>
+    <!--<img id="arrowimg" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />-->
     <script src="ba.js"></script>
 </body>
 
