@@ -10,6 +10,8 @@ body{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
+    position: fixed;
+    z-index: 1;
 }
 .hamburger{
     background-color: #707070;
@@ -63,7 +65,7 @@ body{
     display: inline-block;
     color: white;
     margin-left: 998px;
-    margin-top: 33px;
+    margin-top: 99px;
     background: #514F48 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 20px #00000047;
     border-radius: 35px;
@@ -142,7 +144,7 @@ body{
     margin-left: 225px;
 }
 .overviewdivs{
-    width: 330px;
+    width: 320px;
     height: 219px;
     display: inline-block;
     margin-top: 45px;
@@ -170,7 +172,7 @@ body{
     width: 100px;
     height: 31px;
     color: black;
-    margin-left: 213px;
+    margin-left: 195px;
     margin-top: 50px;
     font-size: 18px;
     font-weight: 550;
@@ -206,9 +208,191 @@ body{
     display: inline-block;
     color: #3181F8;
     font-weight: 550;
+    position: relative;
+    left: 8px;
+    bottom: 34px;
 }
 #arrowimg{
     position: relative;
-    left: 1277px;
-    bottom: 116px;
+    left: 15px;
+    top: 16px;
+}
+#arrowbg{
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    display: inline-block;
+    height: 47px;
+    width:47px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 93px;
+    right: 81px;
+}
+#trophyimg{
+    margin-left: 205px;
+    margin-top: 47px;
+}
+#analyticshowbtn{
+    width: 251px;
+    height: 58px;
+    background: #AEB0E9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+    position: relative;
+    bottom: 20px;
+}
+#siatxt{
+    font-size: 18px;
+    position: relative;
+    left: 31px;
+    top: 12px;
+}
+table{
+    margin-top: 15px;
+    margin-left: 170px;
+    border-collapse: collapse;
+    width: 1140px;
+    height: 700px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #00000029;
+    border-radius: 48px;
+    opacity: 1;
+    font-weight: 550;
+}
+th{
+    text-align: left;
+    padding: 8px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-weight: 100;
+} 
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: #E9E9E9
+}  
+th{
+    background-color: black;
+    color: white;
+}
+.trev{
+    width: 129px;
+    height: 44px;
+    background: #AEB0E9 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+    color: white;
+    margin-left: 18px;
+    font-weight: 100;
+}
+.fiftypct{
+    position: relative;
+    top: 12px;
+}
+.aw{
+    width: 125px;
+    height: 49px;
+    background: #F3BB03 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #00000047;
+    border-radius: 30px;
+    opacity: 1;
+    color: white;
+    margin-left: 10px;
+    font-weight: 100;
+}
+.edit{
+    position: relative;
+    top: 15px;
+}
+.analyticsdivs{
+    width: 495px;
+    height: 385px;
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    opacity: 1;
+    display: inline-block;
+    margin-top: 20px;
+}
+#ad1,#ad3{
+    margin-left: 215px;   
+}
+.aimgs{
+    width: 600px;
+    height: 375px;
+}
+#dottedgraph, #linegraph{
+    margin-left: 215px;
+}
+#bgraph{
+    margin-left: -65px;
+}
+#linegraph{
+    width: 550px;
+    position: relative;
+    bottom: 16px;
+}
+#ygraph{
+    margin-left: -13px;
+    width: 545px;
+    height: 390px;
+    position: relative;
+    top: 10px;
+}
+@media(max-width: 1395px){
+    #navlogo{
+        margin-left: 525px;
+    }
+    #bellicon{
+        margin-left: 340px;
+    }
+    #createref{
+        margin-left: 750px;
+    }
+    .tips{
+        margin-left: 200px;
+        width: 850px;
+    }
+    .tips p{
+        width: 500px;
+    }
+    .tab{
+        margin-left: 185px;
+    }
+    #tabhr{
+        margin-left: 195px;
+        width: 860px;
+    }
+    #refrev,#trophyimg{
+        margin-left: 160px;
+    }
+    table{
+        margin-left: 115px;
+    }
+    #dottedgraph, #linegraph {
+        margin-left: 175px;
+    }
+    .aimgs {
+        width: 495px;
+        height: 300px;
+    }
+    #linegraph{
+        width: 455px;
+        bottom: 23px;
+    }
+    #bgraph{
+        margin-left: -50px;
+    }
+    #ygraph{
+        margin-left: -10px;
+        top: 0px;
+        height: 317px;
+        width: 445px;
+    }
 }
