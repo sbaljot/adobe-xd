@@ -90,8 +90,8 @@ body{
     top: 17px;
     left: 16px;
 }
-.tips{
-    background: #F2F2F2 0% 0% no-repeat padding-box;
+#tip1,#tip2,#tip3{
+    background: 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #0000003D;
     opacity: 1;
     width: 1062px;
@@ -100,23 +100,60 @@ body{
     margin-top: 29px;
     border-radius: 26px;
 }
-#micimg{
-    position: relative;
-    bottom: 182px;
+#tip1{
+    background-color: #F2F2F2;
 }
-.tips p {
-    margin-left: 325px;
+#tip2{
+    background-color: #455A64;
+    color: white;
+}
+#tip3{
+    background-color: #739AF0;
+    color: white;
+}
+#tip2,#tip3{
+    display: none;
+}
+#tip2img,#tip3img,#tip1img{
+    height: 319px;
+    width: 319px;
+    bottom: 150px;
+    margin-left: 40px;
+    position: relative;
+}
+#tip1 p,#tip2 p,#tip3 p{
     width: 677px;
     display: inline-block;
     position: relative;
-    bottom: 344px;
+    margin-left: 360px;
+    bottom: 300px;
     font-weight: bold;
 }
-#tipheading{
+#tip1heading,#tip2heading,#tip3heading{
     font-size: 29px;
 }
-#tipdesc{
+#tip1desc,#tip2desc,#tip3desc{
     font-size: 15px;
+}
+#dots1,#dots2,#dots3{
+    display: inline-block;
+    margin-left: 830px;
+    position: relative;
+    bottom: 35px;
+}
+#dots1,#dots2,#dots3:hover{
+    cursor: pointer;
+}
+#dots2,#dots3{
+    display: none;
+}
+.dot{
+    height: 13px;
+    width: 14px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
 }
 .tab {
     display: inline-block;
@@ -204,6 +241,10 @@ body{
     top: 30px;
     left: 25px;
 }
+#crimg{
+    height: 77px;
+    width: 250px;
+}
 #arrowlink{
     display: inline-block;
     color: #3181F8;
@@ -252,6 +293,9 @@ body{
     left: 31px;
     top: 12px;
 }
+#downloadpdf{
+    margin-left: 250px;
+}
 table{
     margin-top: 15px;
     margin-left: 170px;
@@ -280,6 +324,12 @@ tr:nth-child(even){
 th{
     background-color: black;
     color: white;
+}
+#sno{
+    padding-left: 40px;
+}
+#ps{
+    padding-right: 40px;
 }
 .trev{
     width: 129px;
@@ -355,12 +405,16 @@ th{
     #createref{
         margin-left: 750px;
     }
-    .tips{
+    #tip1,#tip2,#tip3{
         margin-left: 200px;
         width: 850px;
     }
-    .tips p{
+    #tip1 p,#tip2 p,#tip3 p{
         width: 500px;
+        margin-left: 335px;
+    }
+    #dots1,#dots2,#dots3{
+        margin-left: 640px;
     }
     .tab{
         margin-left: 185px;
@@ -396,3 +450,193 @@ th{
         width: 445px;
     }
 }
+@media(max-width: 1330px){
+    .overviewdivs{
+        width: 280px;
+        margin-top: 18px;
+    }
+    .viewbtn{
+        width: 85px;
+        margin-left: 175px;
+    }
+    #rimg,#rrimg{
+        left: 25px;
+        width: 220px;
+    }
+    #crimg{
+        width: 220px;
+        margin-left: 5px;
+    }
+    #rrtitle,#rtitle,#crtitle{
+        font-size: 23px;
+    }
+    #rrdec,#rdesc{
+        font-size: 15px;
+    }
+    #conversionrate{
+        position: relative;
+        top: 11px;
+    }
+    #arrowlink{
+        bottom: 20px;
+    }
+    #arrowbg{
+        bottom: 80px;
+    }
+    #downloadpdf{
+        margin-left: 205px;
+    }
+    table{
+        width: 1080px;
+    }
+}
+@media(max-width: 1305px){
+    #bellicon{
+        margin-left: 285px;
+    }
+}
+@media(max-width: 1250px){
+    #navlogo{
+        margin-left: 490px;
+    }
+}
+@media(max-width: 1215px){
+    #bellicon{
+        margin-left: 240px;
+    }
+    #downloadpdf{
+        margin-left: 185px;
+    }
+    table{
+        width: 1010px;
+    }
+    #sno{
+        padding-left: 20px;
+    }
+    #ps{
+        padding-right: 20px;
+    }
+}
+@media(max-width: 1211px){
+    #arrowbg{
+        bottom: 150px;
+        margin-left: 1150px;
+    }
+}
+@media(max-width: 1170px){
+    #downloadpdf{
+        margin-left: 100px;
+    }
+    .overviewdivs{
+        width: 250px;
+    }
+    #rrdesc,#rdesc,#rrtitle,#rtitle,#crtitle{
+        left: 15px;
+    }
+    .viewbtn{
+        margin-left: 145px;
+        position: relative;
+    }
+    #viewbtn1,#viewbtn2{
+        top: 12px;
+    }
+    #arrowbg{
+        margin-left: 1060px;
+    }
+    #navlogo{
+        margin-left: 445px;
+    }
+}
+@media(max-width: 1140px){
+    #navlogo{
+        margin-left: 400px;
+    }
+    #createref{
+        margin-left: 615px;
+    }
+    #tip1, #tip2, #tip3 {
+        margin-left: 215px;
+        width: 705px;
+    }
+    #tip1img{
+        margin-left: -15px;
+    }
+    #tip2img,#tip3img{
+        height: 285px;
+        width: 285px;
+        margin-left: 38px;
+        bottom: 130px;
+    }
+    #tip1 p{
+        width: 375px;
+        margin-left: 290px;
+    }
+    #tip2 p,#tip3 p{
+        width: 375px;
+        margin-left: 322px;
+        bottom: 270px;
+    }
+    .tab,#tabhr,#refrev,#trophyimg{
+        margin-left: 115px;
+    }
+    #arrowbg{
+        margin-left: 1020px;
+    }
+    table{
+        margin-left: 65px;
+    }
+    #dots1,#dots2,#dots3{
+        margin-left: 560px;
+    }
+    #dottedgraph,#linegraph{
+        margin-left: 100px;
+    }
+    #rrimg,#rimg,#crimg{
+        margin-left: -15px;
+    }
+}
+@media(max-width: 1090px){
+    #bellicon{
+        margin-left: 200px;
+    }
+    table{
+        margin-left: 30px;
+    }
+}
+@media(max-width: 1061px){
+    #dottedgraph,#linegraph{
+        margin-left: 85px;
+    }
+}
+@media(max-width: 1048px){
+    #dottedgraph,#bgraph{
+        width: 475px;
+    }
+    #ygraph{
+        width: 425px;
+    }
+    #linegraph{
+        width: 435px;
+    }
+    table{
+        margin-left: 6px;
+    }
+    #trophyimg{
+        margin-left: 75px;
+    }
+    #refrev{
+        margin-left: 75px;
+    }
+    #arrowbg{
+        margin-left: 975px;
+    }
+}
+@media(max-width: 1010px){
+    #navlogo{
+        margin-left: 360px;
+    }
+    #dottedgraph,#linegraph,.tab,#tabhr,#trophyimg{
+        margin-left: 70px;
+    }
+}
+@media(max-width: 990px){}
