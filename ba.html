@@ -108,12 +108,41 @@
         </svg><span id="createreftxt">Create New Referral Program</span>
     </div>
     <div class="tips">
-        <img id="micimg" src="images/e8859285-f4ef-4aa8-809a-f0995f693204.png">
-        <p><span id="tipheading">Pro tip #1:</span><br><br>
-            <span id="tipdesc">A/B Test Your Referral Program. Start Creating new Referral Program to find out which
-                referral program
-                strategy brings most of the revenue to your Business.</span>
-        </p>
+        <div id="tip1"><img id="tip1img" src="images/e8859285-f4ef-4aa8-809a-f0995f693204.png">
+            <p><span id="tip1heading">Pro tip #1:</span><br><br>
+                <span id="tip1desc">A/B Test Your Referral Program. Start Creating new Referral Program to find out
+                    which
+                    referral program
+                    strategy brings most of the revenue to your Business.</span>
+            </p>
+        </div>
+        <div id="dots1">
+            <div class="dot" style="background-color: #FFC727;"></div>
+            <div class="dot" onclick="ftip2()"></div>
+            <div class="dot" onclick="ftip3()"></div>
+        </div>
+        <div id="tip2"><img id="tip2img" src="images/3081edaa-98d0-405a-a4a3-c992c138fb24.png">
+            <p><span id="tip2heading">Pro tip #2:</span><br><br>
+                <span id="tip2desc">Test out your Referral Program .It will give you a journey map of what your
+                    customers will see before the referral program is even live.</span>
+            </p>
+        </div>
+        <div id="dots2">
+            <div class="dot" onclick="ftip1()"></div>
+            <div class="dot" style="background-color: #F7A9A0;"></div>
+            <div class="dot" onclick="ftip3()"></div>
+        </div>
+        <div id="tip3"><img id="tip3img" src="images/25109b46-b6a5-4f2c-be7d-7eca995d9e12.png">
+            <p><span id="tip3heading">Pro tip #3:</span><br><br>
+                <span id="tip3desc">Customize rewards, decide what an advocate will get referring your Product and What
+                    Referred friend will get.</span>
+            </p>
+        </div>
+        <div id="dots3">
+            <div class="dot" onclick="ftip1()"></div>
+            <div class="dot" onclick="ftip2()"></div>
+            <div class="dot" style="background-color: #FFC261;"></div>
+        </div>
     </div>
     <div class="tab">
         <p class="tablinks active" style="border-right: grey solid 1px; padding-left: 13px;"
@@ -125,26 +154,26 @@
         <div id="refrev" class="overviewdivs">
             <span id="rrtitle">Referral Revenue</span><br><span id="rrdesc">in Last 7 Days</span>
             <img id="rrimg" src="images/e9e0d1e2-5215-487c-ab27-56dfd83b1a52.png" alt="linegraph">
-            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret"
+            <div class="viewbtn" id="viewbtn1"><span class="viewtxt">View</span> <img class="rightcaret"
                     src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
             </div>
         </div>
         <div id="rev" class="overviewdivs">
             <span id="rtitle">Revenue</span><br><span id="rdesc">on each $ spent</span>
             <img id="rimg" src="images/99cab2e6-3da9-42ab-b8d5-85a9f88b3f1b.png" alt="bargraph">
-            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret"
+            <div class="viewbtn" id="viewbtn2"><span class="viewtxt">View</span> <img class="rightcaret"
                     src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
             </div>
         </div>
         <div id="conversionrate" class="overviewdivs">
             <span id="crtitle">Conversion Rate</span>
-            <img id="crimg" style="height: 77px; width: 250px; margin-left: 20px;"
+            <img id="crimg"
                 src="images/9a676dae-5d07-407f-90ce-01d440fbf6ef.png" alt="graph">
-            <div class="viewbtn"><span class="viewtxt">View</span> <img class="rightcaret"
+            <div class="viewbtn" id="viewbtn3"><span class="viewtxt">View</span> <img class="rightcaret"
                     src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
             </div>
         </div>
-        <div id="arrowlink">View analytics</div>
+        <div id="arrowlink" onclick="openTab(event, 'analytics')">View analytics</div>
         <div id="arrowbg">
             <img id="arrowimg" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
         </div><br>
@@ -152,9 +181,9 @@
         <span
             style="font-size: 24px; color: #707070; margin-left: 5px; position: relative; bottom: 5px; font-weight: 550;">All
             Referral Programs</span>
-        <div id="analyticshowbtn"><span id="siatxt"><img src="images/656d4b43-f426-4763-90d7-a45fbf195139.png"> <span
+        <div id="analyticshowbtn" onclick="openTab(event, 'analytics')"><span id="siatxt"><img src="images/656d4b43-f426-4763-90d7-a45fbf195139.png"> <span
                     style="position: relative; left: 5px; bottom: 6px;">Show In Analytics</span></span></div>
-        <svg style="margin-left: 250px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"
+        <svg id="downloadpdf" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36"
             viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                 stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -172,13 +201,13 @@
             PDF/CSV</span>
         <table>
             <tr>
-                <th style="border-top-left-radius: 48px; padding-left: 40px;">S.No.</th>
+                <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
                 <th>Referral Program Name</th>
                 <th>Customers</th>
                 <th>Orders Placed using Coupons</th>
                 <th>Total Revenue</th>
                 <th>Audience Weightage</th>
-                <th style="border-top-right-radius: 48px; padding-right: 40px;">Preview/Settings</th>
+                <th id="ps" style="border-top-right-radius: 48px;">Preview/Settings</th>
             </tr>
             <tr>
                 <td>1.</td>
@@ -350,7 +379,50 @@
         <img class="aimgs" id="linegraph" src="images/3e738594-2fa1-4b12-b7c1-a22ce12106c3.png" alt="graph">
         <img class="aimgs" id="ygraph" src="images/b550d63e-3edb-4f49-a23f-1b4449f838b3.png" alt="graph">
     </div>
-    <script src="ba.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var tabcontent = document.getElementsByClassName("tabcontent");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            var tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        var tip1 = document.getElementById("tip1");
+        var tip2 = document.getElementById("tip2");
+        var tip3 = document.getElementById("tip3");
+        var dots1 = document.getElementById("dots1");
+        var dots2 = document.getElementById("dots2");
+        var dots3 = document.getElementById("dots3");
+        function ftip1(){
+            tip1.style.display="block";
+            dots1.style.display="inline-block";
+            tip2.style.display="none";
+            tip3.style.display="none";
+            dots2.style.display="none";
+            dots3.style.display="none";
+        }
+        function ftip2(){
+            tip2.style.display="block";
+            dots2.style.display="inline-block";
+            tip1.style.display="none";
+            tip3.style.display="none";
+            dots1.style.display="none";
+            dots3.style.display="none";
+        }
+        function ftip3(){
+            tip3.style.display="block";
+            dots3.style.display="inline-block";
+            tip2.style.display="none";
+            tip1.style.display="none";
+            dots2.style.display="none";
+            dots1.style.display="none";
+        }
+    </script>
 </body>
 
 </html>
