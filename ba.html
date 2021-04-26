@@ -178,8 +178,8 @@
             <img id="arrowimg" src="https://img.icons8.com/material-sharp/15/000000/chevron-right.png" />
         </div><br>
         <img id="trophyimg" src="images/55f7e4e4-ee4e-40fd-bdd8-4aeab56d7190.png" alt="trophy">
-        <span
-            style="font-size: 24px; color: #707070; margin-left: 5px; position: relative; bottom: 5px; font-weight: 550;">All
+        <span id="trophytxt"
+            style="color: #707070; margin-left: 5px; position: relative; bottom: 5px; font-weight: 550;">All
             Referral Programs</span>
         <div id="analyticshowbtn" onclick="openTab(event, 'analytics')"><span id="siatxt"><img src="images/656d4b43-f426-4763-90d7-a45fbf195139.png"> <span
                     style="position: relative; left: 5px; bottom: 6px;">Show In Analytics</span></span></div>
@@ -197,16 +197,16 @@
                 </g>
             </g>
         </svg>
-        <span style="font-size: 20px; color: #707070; margin-left: 5px; position: relative; bottom: 10px;">Download
+        <span id="dld" style="font-size: 20px; color: #707070; margin-left: 5px; position: relative; bottom: 10px;">Download
             PDF/CSV</span>
         <table>
             <tr>
                 <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
                 <th>Referral Program Name</th>
-                <th>Customers</th>
-                <th>Orders Placed using Coupons</th>
-                <th>Total Revenue</th>
-                <th>Audience Weightage</th>
+                <th class="borderprop">Customers <div class="yellowbar"></div></th>
+                <th class="borderprop">Orders Placed using Coupons</th>
+                <th class="borderprop">Total Revenue</th>
+                <th class="borderprop">Audience Weightage</th>
                 <th id="ps" style="border-top-right-radius: 48px;">Preview/Settings</th>
             </tr>
             <tr>
@@ -367,6 +367,262 @@
                                 </g>
                             </svg></span></div>
                 </td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+        </table>
+        <table id="orderplaced">
+            <tr>
+                <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
+                <th>Referral Program Name</th>
+                <th class="borderprop">Orders Placed using Coupons <div class="yellowbar"></div></th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>My Referral Program 1</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>My Referral Program 2</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>My Referral Program 1</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>My Referral Program 2</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>My Referral Program 1</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>My Referral Program 2</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <table id="totalrev">
+            <tr>
+                <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
+                <th>Referral Program Name</th>
+                <th class="borderprop">Total Revenue <div class="yellowbar"></div></th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>My Referral Program 1</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>My Referral Program 2</td>
+                <td>$60</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>My Referral Program 1</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>My Referral Program 2</td>
+                <td>$60</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>My Referral Program 1</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>My Referral Program 2</td>
+                <td>$60</td>
+            </tr>
+        </table>
+        <table id="audweight">
+            <tr>
+                <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
+                <th>Referral Program Name</th>
+                <th class="borderprop">Audience Weightage <div class="yellowbar"></div></th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>My Referral Program 2</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>My Referral Program 2</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>My Referral Program 2</td>
+                <td>
+                    <div class="trev"><span class="fiftypct">50%&nbsp;&nbsp;&nbsp;<svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="15"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M42.43149,50.1839l-18.70913,18.70913l62.27764,62.27764l62.27765,-62.27764l-18.70913,-18.70913l-43.56851,43.56851z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></span></div>
+                </td>
+            </tr>
+        </table>
+        <table id="prevsettings">
+            <tr>
+                <th id="sno" style="border-top-left-radius: 48px;">S.No.</th>
+                <th>Referral Program Name</th>
+                <th id="ps" style="border-top-right-radius: 48px;">Preview/Settings <div class="yellowbar"></div></th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>My Referral Program 2</td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>My Referral Program 2</td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>My Referral Program 1</td>
+                <td>
+                    <div class="aw"><span class="edit">Edit</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>My Referral Program 2</td>
                 <td>
                     <div class="aw"><span class="edit">Edit</span></div>
                 </td>
