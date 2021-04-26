@@ -274,6 +274,9 @@ body{
     margin-left: 205px;
     margin-top: 47px;
 }
+#trophytxt{
+    font-size: 24px;
+}
 #analyticshowbtn{
     width: 251px;
     height: 58px;
@@ -341,6 +344,9 @@ th{
     margin-left: 18px;
     font-weight: 100;
 }
+.yellowbar{
+    display: none;
+}
 .fiftypct{
     position: relative;
     top: 12px;
@@ -360,6 +366,10 @@ th{
     position: relative;
     top: 15px;
 }
+#orderplaced,#totalrev,#audweight,#prevsettings{
+    display: none;
+}
+
 .analyticsdivs{
     width: 495px;
     height: 385px;
@@ -639,4 +649,258 @@ th{
         margin-left: 70px;
     }
 }
-@media(max-width: 990px){}
+@media(max-width: 1000px){
+    #bellicon {
+        margin-left: 180px;
+    }
+    #tip1,#tip2,#tip3{
+        height: 185px;
+        width: 850px;
+        margin-left: 70px;
+    }
+    .dot{
+        height: 4px;
+        width: 4px;
+    }
+    #dots1,#dots2,#dots3{
+        margin-left: 500px;
+    }
+    #tip1 p{
+        bottom: 320px;
+        width: 560px;
+    }
+    #tip2 p,#tip3 p{
+        bottom: 275px;
+        width: 495px;
+    }
+    .tab{
+        margin-top: 0px;
+    }
+    .overviewdivs {
+        width: 360px;
+    }
+    #refrev{
+        margin-left: 75px;
+    }
+    #rrdesc, #rdesc, #rrtitle, #rtitle, #crtitle {
+        left: 30px;
+    }
+    #rrimg, #rimg, #crimg {
+        margin-left: 35px;
+        top: 35px;
+    }
+    .viewbtn{
+        margin-left: 245px;
+    }
+    #conversionrate{
+        margin-left: 81px;
+    }
+    #overview,#analytics{
+        width: 979px;
+    }
+    #arrowlink{
+        margin-left: 100px;
+        font-size: x-large;
+    }
+    #arrowbg{
+        margin-left: 695px;
+    }
+    #trophytxt{
+        font-size: 20px;
+    }
+    #analyticshowbtn{
+        margin-left: 145px;
+        bottom: 35px;
+    }
+    #siatxt{
+        left: 45px;
+        top: 23px;
+    }
+    #dld,#siatxt img,tr:nth-child(4),tr:nth-child(5),tr:nth-child(6),tr:nth-child(7),
+    th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5),
+    th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7){
+        display: none;
+    }
+    #downloadpdf {
+        margin-left: 120px;
+    }
+    tr:nth-child(odd){
+        background-color: #E9E9E9;
+    }
+    tr:nth-child(even){
+        background-color: white;
+    }
+    .borderprop{
+        border-top-right-radius: 48px;
+        width: 130px;
+        padding-right: 40px;
+    }
+    th{
+        text-align: center;
+    }
+    table{
+        width: 850px;
+        margin-left: 60px;
+        margin-top: 35px;
+        height: 210px;
+    }
+    #orderplaced,#totalrev,#audweight,#prevsettings{
+        display: table;
+    }
+    .trev,.aw{
+        width: 110px;
+    }
+    #ps{
+        width: 1px;
+    }
+    .yellowbar{
+        height: 6px;
+        width: 130px;
+        background-color: #F3BB03;
+        position: relative;
+        top: 31px;
+        left: 5px;
+        display: block;
+    }
+    #orderplaced .yellowbar{
+        top: 28px;
+    }
+    #audweight .yellowbar,#prevsettings .yellowbar{
+        top: 20px;
+    }
+}
+@media(max-width: 768px),(height: 1024px){
+    #bellicon {
+        margin-left: 180px;
+    }
+    #tip1,#tip2,#tip3{
+        height: 185px;
+        width: 850px;
+        margin-left: 70px;
+    }
+    .dot{
+        height: 4px;
+        width: 4px;
+    }
+    #dots1,#dots2,#dots3{
+        margin-left: 500px;
+    }
+    #tip1 p{
+        bottom: 320px;
+        width: 560px;
+    }
+    #tip2 p,#tip3 p{
+        bottom: 275px;
+        width: 495px;
+    }
+    .tab{
+        margin-top: 0px;
+    }
+    .overviewdivs {
+        width: 360px;
+    }
+    #refrev{
+        margin-left: 75px;
+    }
+    #rrdesc, #rdesc, #rrtitle, #rtitle, #crtitle {
+        left: 30px;
+    }
+    #rrimg, #rimg, #crimg {
+        margin-left: 35px;
+        top: 35px;
+    }
+    .viewbtn{
+        margin-left: 245px;
+    }
+    #conversionrate{
+        margin-left: 81px;
+    }
+    #overview,#analytics{
+        width: 979px;
+    }
+    #arrowlink{
+        margin-left: 100px;
+        font-size: x-large;
+    }
+    #arrowbg{
+        margin-left: 695px;
+    }
+    #trophytxt{
+        font-size: 20px;
+    }
+    #analyticshowbtn{
+        margin-left: 145px;
+        bottom: 35px;
+    }
+    #siatxt{
+        left: 45px;
+        top: 23px;
+    }
+    #dld,#siatxt img,tr:nth-child(4),tr:nth-child(5),tr:nth-child(6),tr:nth-child(7),
+    th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5),
+    th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7){
+        display: none;
+    }
+    #downloadpdf {
+        margin-left: 120px;
+    }
+    tr:nth-child(odd){
+        background-color: #E9E9E9;
+    }
+    tr:nth-child(even){
+        background-color: white;
+    }
+    .borderprop{
+        border-top-right-radius: 48px;
+        width: 130px;
+        padding-right: 40px;
+    }
+    th{
+        text-align: center;
+    }
+    table{
+        width: 850px;
+        margin-left: 60px;
+        margin-top: 35px;
+        height: 210px;
+    }
+    #orderplaced,#totalrev,#audweight,#prevsettings{
+        display: table;
+    }
+    .trev,.aw{
+        width: 110px;
+    }
+    #ps{
+        width: 1px;
+    }
+    .yellowbar{
+        height: 6px;
+        width: 130px;
+        background-color: #F3BB03;
+        position: relative;
+        top: 31px;
+        left: 5px;
+        display: block;
+    }
+    #orderplaced .yellowbar{
+        top: 28px;
+    }
+    #audweight .yellowbar,#prevsettings .yellowbar{
+        top: 20px;
+    }
+}
+@media(max-width: 350px){
+    .tab{
+        margin-left: 60px;
+    }
+}
+@media(max-width: 322px){
+    .tab{
+        margin-left: 50px;
+    }
+}
+@media(max-width: 313px){
+    .tab{
+        margin-left: 40px;
+    }
+}
