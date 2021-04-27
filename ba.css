@@ -362,6 +362,9 @@ th{
     margin-left: 10px;
     font-weight: 100;
 }
+#newrow{
+    display: none;
+}
 .edit{
     position: relative;
     top: 15px;
