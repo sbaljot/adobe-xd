@@ -643,77 +643,7 @@
         <img class="aimgs" id="linegraph" src="images/3e738594-2fa1-4b12-b7c1-a22ce12106c3.png" alt="graph">
         <img class="aimgs" id="ygraph" src="images/b550d63e-3edb-4f49-a23f-1b4449f838b3.png" alt="graph">
     </div>
-    <script>
-        var tip1 = document.getElementById("tip1");
-        var tip2 = document.getElementById("tip2");
-        var tip3 = document.getElementById("tip3");
-        var dots1 = document.getElementById("dots1");
-        var dots2 = document.getElementById("dots2");
-        var dots3 = document.getElementById("dots3");
-        var start = 0; var limit = 5; var reachedmax = false;
-        function openTab(evt, tabName) {
-            var tabcontent = document.getElementsByClassName("tabcontent");
-            for (let i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            var tablinks = document.getElementsByClassName("tablinks");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        function ftip1() {
-            tip1.style.display = "block";
-            dots1.style.display = "inline-block";
-            tip2.style.display = "none";
-            tip3.style.display = "none";
-            dots2.style.display = "none";
-            dots3.style.display = "none";
-        }
-        function ftip2() {
-            tip2.style.display = "block";
-            dots2.style.display = "inline-block";
-            tip1.style.display = "none";
-            tip3.style.display = "none";
-            dots1.style.display = "none";
-            dots3.style.display = "none";
-        }
-        function ftip3() {
-            tip3.style.display = "block";
-            dots3.style.display = "inline-block";
-            tip2.style.display = "none";
-            tip1.style.display = "none";
-            dots2.style.display = "none";
-            dots1.style.display = "none";
-        }
-        window.addEventListener('scroll', () => {
-            const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-            if (clientHeight + scrollTop >= scrollHeight) {
-                $(document).ready(function () {
-                    getData();
-                });
-            }
-            function getData() {
-                if(reachedmax) return; 
-                setTimeout(function () {
-                    $.ajax({
-                        type: "POST",
-                        url: "ba.php",
-                        dataType:"json",
-                        data:{getData: 1,start: start,limit: limit},
-                        success: function (response) {
-                            if(response=='reachedmax'){reachedmax=true;}
-                            else{
-                                start+=limit;
-                                $('table').append(response);
-                            }
-                        }
-                    });
-                }, 1500)
-            }
-        })
-    </script>
+    <script src="ba.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
