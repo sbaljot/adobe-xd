@@ -4,7 +4,8 @@
         $start = $conn->real_escape_string($_POST['start']);
         $limit = $conn->real_escape_string($_POST['limit']);
         $sql = $conn->query("SELECT * from refs LIMIT $start,$limit");
-        if($sql->num_rows>0){
+        $currentrows=$sql->num_rows;
+        if($currentrows>0){
             $response=[];
             while($data=$sql->fetch_array()){
                 array_push($response, '<tr><td>' . $data['sno'] . '.</td>
@@ -35,6 +36,9 @@
             }
             exit(json_encode($response));
         }
-        else{exit('reachedmax');}
+        else{
+            $null=[];
+            exit(json_encode($null));
+        }
     }
 ?>
