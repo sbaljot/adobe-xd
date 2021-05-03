@@ -45,8 +45,10 @@ function ftip3() {
 window.addEventListener('load', () => {getData();})
 window.addEventListener('scroll', () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-    console.log(scrollTop/ptable.clientHeight>3.5 && scrollTop/ptable.clientHeight<4);
     if (clientHeight + scrollTop >= scrollHeight) {getData();}
+    else if(ptable.style.display!="none"){
+        if(clientHeight + scrollTop + 300 >= scrollHeight) {getData();}
+    }
 })
 function getData() {
     if (reachedmax) { console.log('No more records'); }
