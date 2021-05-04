@@ -304,7 +304,6 @@ table{
     margin-left: 170px;
     border-collapse: collapse;
     width: 1140px;
-    height: 700px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 20px #00000029;
     border-radius: 48px;
@@ -322,11 +321,14 @@ td{
     text-align: center;
 }
 tr:nth-child(even){
-    background-color: #E9E9E9
+    background-color: #E9E9E9;
 }  
 th{
     background-color: black;
     color: white;
+}
+tr{
+    height: 90px;
 }
 #sno{
     padding-left: 40px;
@@ -361,9 +363,6 @@ th{
     color: white;
     margin-left: 10px;
     font-weight: 100;
-}
-#newrow{
-    display: none;
 }
 .edit{
     position: relative;
@@ -719,9 +718,8 @@ th{
         left: 45px;
         top: 23px;
     }
-    #dld,#siatxt img,tr:nth-child(4),tr:nth-child(5),tr:nth-child(6),tr:nth-child(7),
-    th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5),
-    th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7){
+    #dld,#siatxt img,th:nth-child(4),th:nth-child(5),th:nth-child(6),th:nth-child(7),
+    td:nth-child(4),td:nth-child(5),td:nth-child(6),td:nth-child(7){
         display: none;
     }
     #downloadpdf {
@@ -772,124 +770,694 @@ th{
         top: 20px;
     }
 }
-@media(max-width: 768px),(height: 1024px){
+@media(max-width: 980px){
+    #navlogo{
+        margin-left: 340px;
+    }
     #bellicon {
-        margin-left: 180px;
+        margin-left: 165px;
     }
-    #tip1,#tip2,#tip3{
-        height: 185px;
-        width: 850px;
-        margin-left: 70px;
+    #navuser{
+        margin-left: 20px;
     }
-    .dot{
-        height: 4px;
-        width: 4px;
+}
+@media(max-width: 930px){
+    #usericon{
+        margin-left: 0px;
     }
-    #dots1,#dots2,#dots3{
-        margin-left: 500px;
+    #createref {
+        margin-left: 535px;
     }
-    #tip1 p{
-        bottom: 320px;
-        width: 560px;
+    #tip1, #tip2, #tip3{
+        width: 760px;
     }
-    #tip2 p,#tip3 p{
-        bottom: 275px;
-        width: 495px;
+    #tip1 p {
+        width: 460px;
     }
-    .tab{
-        margin-top: 0px;
+    #tip2 p, #tip3 p {
+        width: 425px;
     }
-    .overviewdivs {
-        width: 360px;
+    .dot {
+        height: 10px;
+        width: 10px;
     }
-    #refrev{
-        margin-left: 75px;
-    }
-    #rrdesc, #rdesc, #rrtitle, #rtitle, #crtitle {
-        left: 30px;
-    }
-    #rrimg, #rimg, #crimg {
-        margin-left: 35px;
-        top: 35px;
-    }
-    .viewbtn{
-        margin-left: 245px;
-    }
-    #conversionrate{
-        margin-left: 81px;
-    }
-    #overview,#analytics{
-        width: 979px;
-    }
-    #arrowlink{
-        margin-left: 100px;
-        font-size: x-large;
-    }
-    #arrowbg{
-        margin-left: 695px;
-    }
-    #trophytxt{
-        font-size: 20px;
-    }
-    #analyticshowbtn{
-        margin-left: 145px;
-        bottom: 35px;
-    }
-    #siatxt{
-        left: 45px;
-        top: 23px;
-    }
-    #dld,#siatxt img,tr:nth-child(4),tr:nth-child(5),tr:nth-child(6),tr:nth-child(7),
-    th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5),
-    th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7){
-        display: none;
-    }
-    #downloadpdf {
-        margin-left: 120px;
-    }
-    tr:nth-child(odd){
-        background-color: #E9E9E9;
-    }
-    tr:nth-child(even){
-        background-color: white;
-    }
-    .borderprop{
-        border-top-right-radius: 48px;
-        width: 130px;
-        padding-right: 40px;
-    }
-    th{
-        text-align: center;
+    #dots1, #dots2, #dots3 {
+        margin-left: 485px;
     }
     table{
-        width: 850px;
+        width: 755px;
+    }
+    #bellicon {
+        margin-left: 115px;
+    }
+}
+@media(max-width: 860px){
+    #navlogo {
+        margin-left: 300px;
+    }
+    #createref {
+        margin-left: 485px;
+    }
+    #tip1, #tip2, #tip3{
+        margin-left: 20px;
+    }
+    #dottedgraph, #linegraph, .tab, #tabhr, #trophyimg {
+        margin-left: 10px;
+    }
+    #tabhr {
+        width: 780px;
+    }
+    #refrev,#conversionrate,table,#trophyimg {
+        margin-left: 5px;
+    }
+    #arrowbg {
+        margin-left: 615px;
+    }
+    #analyticshowbtn{
+        margin-left: 75px;
+    }
+}
+@media(max-width:825px){
+    #tip1, #tip2, #tip3 {
+        margin-left: 5px;
+    }
+    #createref {
+        margin-left: 465px;
+    }
+    #tabhr {
+        width: 755px;
+    }
+    #dottedgraph, #bgraph {
+        width: 450px;
+    }
+    .aimgs{
+        height: 275px;
+    }
+    #linegraph {
+        width: 415px;
+    }
+    #ygraph {
+        width: 390px;
+        height: 294px;
+    }
+    #navlogo {
+        margin-left: 265px;
+    }
+}
+@media(max-width:785px){
+    #bellicon {
+        margin-left: 105px;
+    }
+    #navuser {
+        margin-left: 3px;
+    }
+    #createref {
+        margin-left: 425px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 705px;
+    }
+    #tip1 p {
+        width: 410px;
+    }
+    #tip2 p, #tip3 p {
+        width: 370px;
+    }
+    #dottedgraph, #bgraph {
+        width: 375px;
+    }
+    .aimgs {
+        height: 245px;
+    }
+    #dots1, #dots2, #dots3 {
+        margin-left: 385px;
+    }
+    #bgraph {
+        margin-left: -38px;
+    }
+    #linegraph {
+        width: 350px;
+    }
+    #ygraph {
+        width: 335px;
+        height: 265px;
+    }
+    #downloadpdf {
+        margin-left: 95px;
+    }
+    table {
+        width: 710px;
+    }
+    #orderplaced .yellowbar {
+        top: 23px;
+    }
+    #prevsettings .yellowbar {
+        top: 32px;
+    }
+}
+@media(max-width: 768px),(height: 1024px){
+    #navlogo {
+        margin-left: 245px;
+    }
+    #bellicon {
+        margin-left: 105px;
+    }
+    #navuser {
+        margin-left: 3px;
+    }
+    #createref {
+        margin-left: 425px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 705px;
+    }
+    #tip1 p {
+        width: 410px;
+    }
+    #tip2 p, #tip3 p {
+        width: 370px;
+    }
+    #dottedgraph, #bgraph {
+        width: 375px;
+    }
+    .aimgs {
+        height: 245px;
+    }
+    #dots1, #dots2, #dots3 {
+        margin-left: 385px;
+    }
+    #bgraph {
+        margin-left: -38px;
+    }
+    #linegraph {
+        width: 350px;
+    }
+    #ygraph {
+        width: 335px;
+        height: 265px;
+    }
+    #downloadpdf {
         margin-left: 60px;
-        margin-top: 35px;
+    }
+    table {
+        width: 710px;
+    }
+    #orderplaced .yellowbar {
+        top: 23px;
+    }
+    #prevsettings .yellowbar {
+        top: 32px;
+    }
+    .overviewdivs {
+        width: 320px;
+    }
+    .viewbtn {
+        margin-left: 210px;
+    }
+    #arrowbg {
+        margin-left: 570px;
+    }
+    #tabhr {
+        width: 695px;
+    }
+}
+@media(max-width: 740px){
+    table {
+        width: 655px;
+    }
+    #analyticshowbtn{
+        width: 205px;
+    }
+    #siatext{
+        left: 25px;
+    }
+    #createref {
+        margin-left: 380px;
+    }
+    #bellicon {
+        margin-left: 80px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 670px;
+    }
+    #tip1 p {
+        width: 335px;
+    }
+    #tip2 p, #tip3 p {
+        width: 315px;
+    }
+    #tabhr {
+        width: 660px;
+    }
+}
+@media(max-width: 710px){
+    #navlogo {
+    margin-left: 225px;
+    }
+}
+@media(max-width: 695px){
+    #bellicon {
+        margin-left: 65px;
+    }
+    #createref {
+        margin-left: 325px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 620px;
+    }
+    #tip1 p {
+        width: 310px;
+    }
+    #tip2 p, #tip3 p {
+        width: 255px;
+    }
+    #tip2 p, #tip3 p {
+        bottom: 287px;
+    }
+    #siatext{
+        left: 28px;
+    }
+    #analyticshowbtn {
+        margin-left: 50px;
+    }
+    #tabhr {
+        width: 615px;
+    }
+}
+@media(max-width: 676px){
+    #navlogo {
+        margin-left: 200px;
+    }
+    .overviewdivs {
+        height: 185px;
+        width: 280px;
+    }
+    #overview{
+        width: 625px;
+    }
+    #rrdesc, #rdesc, #rrtitle, #rtitle, #crtitle {
+        left: 15px;
+    }
+    #rrimg, #rimg, #crimg {
+        margin-left: 0px;
+    }
+    .viewbtn {
+        margin-left: 175px;
+    }
+    #viewbtn1, #viewbtn2 {
+        top: -6px;
+    }
+    #viewbtn3{
+        bottom: 12px;
+    }
+    #arrowlink {
+        margin-left: 54px;
+    }
+    #arrowbg {
+        margin-left: 484px;
+        bottom: 115px;
+    }
+    #analyticshowbtn {
+        margin-left: 25px;
+    }
+    #siatext{
+        left: 25px;
+    }
+    table {
+        width: 605px;
+    }
+}
+@media(max-width: 640px){
+    #menu{
+        margin-left: 20px;
+    }
+    #createref {
+        margin-left: 290px;
+    }
+    #tip1img {
+        margin-left: -40px;
+    }
+    #tip2img {
+        margin-left: 3px;
+    }
+    #tip1 p {
+        margin-left: 265px;
+    }
+    #tip2 p,#tip3 p {
+        margin-left: 305px;
+    }
+    #dots1, #dots2, #dots3 {
+        margin-left: 310px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 575px;
+    }
+    #tabhr {
+        width: 565px;
+    }
+    table {
+        width: 555px;
+    }
+    #siatext{
+        left: 25px;
+    }
+    #downloadpdf {
+        margin-left: 30px;
+    }
+    #dottedgraph, #bgraph {
+        width: 310px;
+    }
+    .aimgs {
         height: 210px;
     }
-    #orderplaced,#totalrev,#audweight,#prevsettings{
-        display: table;
+    #bgraph {
+        margin-left: -30px;
     }
-    .trev,.aw{
-        width: 110px;
+    #linegraph {
+        width: 285px;
     }
-    #ps{
-        width: 1px;
+    #ygraph {
+        width: 280px;
+        height: 226px;
+        top: -5px;
+        margin-left: -4px;
     }
-    .yellowbar{
-        height: 6px;
-        width: 130px;
-        background-color: #F3BB03;
-        position: relative;
-        top: 31px;
-        left: 5px;
-        display: block;
+}
+@media(max-width: 620px){
+    #bellicon {
+        margin-left: 50px;
     }
-    #orderplaced .yellowbar{
-        top: 28px;
+}
+@media(max-width: 600px){
+    #navlogo {
+        margin-left: 170px;
     }
-    #audweight .yellowbar,#prevsettings .yellowbar{
-        top: 20px;
+    #createref {
+        margin-left: 240px;
+    }
+    #tip2img, #tip3img, #tip1img {
+        height: 290px;
+        width: 290px;
+    }
+    #tip2img, #tip3img{
+        height: 265px;
+        width: 265px;
+    }
+    #tip3img{
+        margin-left: 14px;
+    }
+    #tip1 p {
+        margin-left: 230px;
+        bottom: 295px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 535px;
+    }
+    #tip2 p, #tip3 p {
+        margin-left: 270px;
+        bottom: 268px;
+    }
+    .overviewdivs{
+        width: 260px;
+    }
+    #tabhr {
+        width: 520px;
+    }
+    .viewbtn{
+        width: 70px;
+    }
+    .viewtxt{
+        left: 10px;
+    }
+    .rightcaret{
+        left: 6px;
+    }
+    #arrowbg{
+        margin-left: 465px;
+    }
+    table {
+        width: 530px;
+    }
+    #siatext{
+        left: 10px;
+    }
+    #analyticshowbtn {
+        width: 173px;
+    }
+}
+@media(max-width: 560px){
+    #bellicon, #helpicon{
+        display: none;
+    }
+    #navuser {
+        margin-left: 60px;
+    }
+    #createref {
+        margin-left: 220px;
+        height: 65px;
+        width: 285px;
+    }
+    #plusicon{
+        top: 12px;
+        left: 10px;
+    }
+    #createreftxt{
+        top: -2px;
+        left: 20px;
+    }
+    #tip2img, #tip3img, #tip1img {
+        height: 270px;
+        width: 270px;
+        bottom: 131px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 490px;
+    }
+    #tip1 p {
+        margin-left: 210px;
+        bottom: 270px;
+        width: 273px;
+    }
+    #tip1heading, #tip2heading, #tip3heading {
+        font-size: 25px;
+    }
+    #tip1desc, #tip2desc, #tip3desc {
+        font-size: 13px;
+    }
+    #dots1, #dots2, #dots3 {
+        margin-left: 220px;
+    }
+    #tip2img, #tip3img {
+        height: 224px;
+        width: 210px;
+        bottom: 90px;
+    }
+    #tip2 p, #tip3 p {
+        margin-left: 222px;
+        bottom: 221px;
+    }
+    #tabhr {
+        width: 485px;
+    }
+    .overviewdivs {
+        height: 160px;
+        width: 230px;
+        margin-top: 9px;
+    }
+    #rrtitle, #rtitle, #crtitle {
+        font-size: 20px;
+    }
+    #rrdesc{
+        font-size: 15px;
+    }
+    #rrimg, #rimg, #crimg {
+        margin-left: -6px;
+    }
+    #rimg,#rrimg,#crimg{
+        width: 185px;
+        top: 25px;
+    }
+    .viewbtn{
+        font-size: 14px;
+        height: 25px;
+        width: 60px;
+    }
+    .viewtxt{
+        top: 2px;
+    }
+    .rightcaret{
+        top: 4px;
+    }
+    #crimg{
+        height: 62px;
+    }
+    #viewbtn1, #viewbtn2 {
+        top: -14px;
+    }
+    #arrowlink {
+        margin-left: 30px;
+    }
+    #arrowbg {
+        margin-left: 410px;
+    }
+    #trophytxt {
+        font-size: 18px;
+    }
+    #siatext{
+        left: 10px;
+    }
+    table {
+        width: 490px;
+    }
+    #downloadpdf {
+        margin-left: 15px;
+    }
+}
+@media(max-width: 520px){
+    #navlogo {
+        margin-left: 130px;
+    }
+    #tip1, #tip2, #tip3 {
+        height: 160px;
+        width: 460px;
+    }
+    #tip1img{
+        height: 245px;
+        width: 245px;
+    }
+    #tip1 p{
+        height: 142px;
+        margin-left: 190px;
+        bottom: 253px;
+        width: 238px;
+    }
+    #tip1heading, #tip2heading, #tip3heading {
+        font-size: 20px;
+    }
+    #tip1desc, #tip2desc, #tip3desc {
+        font-size: 10px;
+    }
+    #dots1, #dots2, #dots3 {
+        bottom: 22px;
+    }
+    #tip2img,#tip3img{
+        height: 206px;
+        width: 184px;
+    }
+    #tip2 p,#tip3 p{
+        margin-left: 195px;
+        bottom: 205px;
+    }
+    #plusicon{
+        display: none;
+    }
+    #createref{
+        height: 45px;
+        width: 243px;
+        margin-left: 219px;
+    }
+    #createreftxt {
+        top: 13px;
+        left: 16px;
+    }
+    #tabhr {
+        width: 450px;
+    }
+    .viewbtn {
+        margin-left: 145px;
+    }
+    #viewbtn3 {
+        bottom: 19px;
+    }
+    .overviewdivs{
+        margin-left: 0px;
+    }
+    #siatext{
+        left: 12px;
+    }
+    #analyticshowbtn {
+        margin-left: 7px;
+    }
+    #downloadpdf {
+        margin-left: 0px;
+    }
+    table {
+        width: 445px;
+    }
+    #dottedgraph, #bgraph {
+        width: 235px;
+    }
+    .aimgs {
+        height: 170px;
+    }
+    #linegraph {
+        width: 210px;
+    }
+    #ygraph{
+        width: 205px;
+        height: 187px;
+    }
+}
+@media(max-width: 490px){
+    #navuser {
+        margin-left: 35px;
+    }
+    #createref{
+        margin-left: 200px;
+    }
+    #tip1, #tip2, #tip3 {
+        width: 430px;
+    }
+    #tip2 p, #tip3 p {
+        width: 225px;
+    }
+    #tabhr {
+        width: 420px;
+    }
+    .overviewdivs{
+        height: 130px;
+        width: 203px;
+    }
+    #rrtitle, #rtitle, #crtitle {
+        font-size: 15px;
+    }
+    #rrdesc,#rdesc {
+        font-size: 10px;
+    }
+    #rimg, #rrimg, #crimg {
+        width: 150px;
+    }
+    .viewbtn{
+        height: 20px;
+        width: 50px;
+        margin-left: 135px;
+    }
+    .rightcaret{
+        display: none;
+    }
+    #viewbtn1, #viewbtn2 {
+        top: -22px;
+    }
+    #crimg {
+        height: 45px;
+    }
+    #arrowlink {
+        margin-left: 20px;
+    }
+    #arrowbg {
+        margin-left: 372px;
+    }
+    #trophytxt {
+        font-size: 15px;
+    }
+    #siatxt {
+        left: 11px;
+        top: 19px;
+        font-size: 16px;
+    }
+    #analyticshowbtn {
+        height: 45px;
+        width: 160px;
     }
 }
 @media(max-width: 350px){
